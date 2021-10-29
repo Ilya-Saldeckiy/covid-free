@@ -1,70 +1,90 @@
-/* Стили для подложки */
-
-.overlay {
-
-	/* Скрываем подложку  */
-	opacity: 0;
-	visibility: hidden;
-
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, .5);
-	z-index: 20;
-	transition: .3s all;
+.modal-header{
+	border: none;
 }
 
-
-/* Стили для модальных окон */
-
-.modal {
-
-	/* Скрываем окна  */
-	opacity: 0;
-	visibility: hidden;
-
-
-	/*  Установаем ширину окна  */
-	width: 100%;
-	max-width: 500px;
-
-	/*  Центрируем и задаем z-index */
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 30; /* Должен быть выше чем у подложки*/
-
-	/*  Побочные стили   */
-	box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
-	text-align: center;
-	padding: 30px;
-	border-radius: 3px;
-	background-color: #fff;
-	transition: 0.3s all;
+.modal-dialog {
+	width: 432px;
+	margin-top: 136px;
 }
 
-
-/* Стили для активных классов подложки и окна */
-
-.modal.active,
-.overlay.active{
-	opacity: 1;
-	visibility: visible;
+.modal-content{
+	padding-left: 40px;
+	padding-top: 37px;
+	padding-bottom: 40px;
+	padding-right: 40px;
 }
 
-
-/* Стили для кнопки закрытия */
-
-.modal__cross {
-	width: 15px;
-	height: 15px;
+.modal-close-btn{
+	width: 18px;
+	height: 18px;
+	outline: none;
+	border: none;
+	background: url("../img/ico_x.svg") no-repeat;
+	background-size: cover;
 	position: absolute;
-	top: 20px;
-	right: 20px;
-	fill: #444;
-	cursor: pointer;
+	top: 27px;
+	right: 27px;
 }
 
+.modal-title{
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000000;
+	margin-bottom: 39px;
+}
+
+.form-floating>.modal__input{
+	width: 100%;
+}
+
+.modal-floating{
+	margin-right: 0;
+	margin-bottom: 24px;
+}
+
+.modal-floating:nth-last-of-type(-n+2){
+	margin-bottom: 24px;
+}
+
+.modal-floating:nth-last-of-type(-n+1){
+	margin-bottom: 32px;
+}
+
+.modal__submit-btn{
+	width: 352px;
+	height: 56px;
+	background-color: #00a9e0;
+	border-radius: 28px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.modal__results{
+	display: none;
+	text-align: center;
+}
+
+.modal__result-active .modal__form{
+	display: none;
+}
+
+.modal__result-active .modal__results{
+	display: block;
+}
+
+.modal__result-img{
+	width: 120px;
+	height: 120px;
+	margin-bottom: 34px;
+}
+
+.modal__result-text{
+	font-size: 18px;
+	line-height: 32px;
+	font-weight: 600;
+	color: #00b388;
+}

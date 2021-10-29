@@ -8,14 +8,18 @@
     <meta name="description" content="Анализы в Москве, Подмосковье, в городах России">
     <title>CMD Центр Молекулярной Диагностики. Медицинская лаборатория 8 (800) 707 788 1 </title>
     <link rel="stylesheet" href="css/normalize.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="font/manrope-regular.ttf" as="font">
 	<link rel="preload" href="font/manrope-semibold.ttf" as="font">
     <link rel="preload" href="font/manrope-bold.ttf" as="font">
     <link rel="stylesheet" href="css/modal.css">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/jquery.js"></script>
     <script src="js/iquery-ui.js"></script>
+	<script type='text/javascript' src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
 </head>
 <body>
     <section class="header-section">
@@ -25,7 +29,10 @@
                 <div class="header-container">
                     <h1 class="hidden-caption">CMD Центр Молекулярной Диагностики</h1>
                     <a class="logo" href="https://www.cmd-online.ru/" target="_blank"><img src="img/logo.svg" alt="Логотип"></a>
-									<button class="btn js-open-modal header__modal-btn" data-modal="1">Заказать звонок</button>
+									<button type="button" class="header__modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+										Заказать звонок
+									</button>
+									<button class="btn fixed__btn">Оставить заявку</button>
                 </div>
             </div>
         </div>
@@ -207,6 +214,81 @@
 								</div>
 							</div>
 						</section>
+						<section class="section_pay">
+							<div class="container">
+								<h2 class="main-caption pay_caption">Оплата</h2>
+								<div class="flex pay_card-position">
+									<div class="pay__card">
+										<img class="pay__card-img" src="img/fiz.svg" alt="Картинка оплаты 1">
+										<p class="pay__card-text">
+											<span class="pay__card_text-decoration">Для физических лиц</span>
+											– банковской картой или наличными в офисе и мобильных пунктах перед тестированием
+										</p>
+									</div>
+									<div class="pay__card">
+										<img class="pay__card-img" src="img/ur.svg" alt="Картинка оплаты 2">
+										<p class="pay__card-text">
+											<span class="pay__card_text-decoration">Для юридических лиц</span>
+											– безналичный расчет, 100% предоплата.
+										</p>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="section_callback">
+							<div class="container">
+								<form class="flex callback__form-position">
+									<div class="callback__form_text-block">
+										<h3 class="form__caption">Оставьте заявку на организацию тестирования</h3>
+										<p class="form__text">
+											Для консультации позвоните по номеру
+										</p>
+										<a class="form__tel" href="tel:+79261152628">8 926 115 2628</a>
+									</div>
+									<div class="flex callback__form-block">
+										<div class="form-floating">
+											<input type="text" class="form-control" id="floatingInput" placeholder="Фамилия и Имя">
+											<label for="floatingInput">Фамилия и Имя</label>
+										</div>
+										<div class="form-floating">
+											<input type="tel" class="form-control" id="floatingInput2" placeholder="Фамилия и Имя">
+											<label for="floatingInput2">Телефон</label>
+										</div>
+										<div class="form-floating">
+											<input type="text" class="form-control" id="floatingInput3" data-inputmask="'alias': 'email'" placeholder="Фамилия и Имя">
+											<label for="floatingInput3">Email</label>
+										</div>
+										<div class="form-floating">
+											<input type="text" class="form-control" id="floatingInput4" placeholder="Фамилия и Имя">
+											<label for="floatingInput4">Название компании Организатора</label>
+										</div>
+										<div class="form-floating">
+											<input type="text" class="form-control" id="floatingInput5" placeholder="Фамилия и Имя">
+											<label for="floatingInput5">Название мероприятия</label>
+										</div>
+										<div class="form-floating">
+											<input type="text" class="form-control " id="floatingInput6" placeholder="Фамилия и Имя">
+											<img class="data__input" src="img/ico_calendar.svg">
+											<label for="floatingInput6">Даты проведения</label>
+										</div>
+										<div class="form-floating">
+											<input type="text" class="form-control" id="floatingInput7" placeholder="Фамилия и Имя">
+											<label for="floatingInput7">Адрес мероприятия</label>
+										</div>
+										<div class="form-floating">
+											<input type="text" class="form-control" id="floatingInput8" placeholder="Фамилия и Имя">
+											<label for="floatingInput8">Планируемое кол-во участников</label>
+										</div>
+										<button class="btn form__btn" type="submit">Отправить заявку</button>
+									</div>
+								</form>
+								<div class="banner__position">
+									<p class="banner__subtittle">Для организаций</p>
+									<h3 class="banner__caption">Обследование сотрудников на COVID-19</h3>
+									<button class="btn banner__btn">Подробнее</button>
+								</div>
+							</div>
+						</section>
         </main>
         <footer>
             <section class="footer">
@@ -230,17 +312,40 @@
 
 <!--		модалка-->
 
-		<div class="modal" data-modal="1">
-			<!--   Svg иконка для закрытия окна  -->
-			<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-			<p class="modal__title">Заголовок окна 1</p>
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+<!--				modal__result-active - открывает результат-->
+				<div class="modal-content">
+						<h5 class="modal-title" id="exampleModalLabel">Заказать звонок</h5>
+					<div class="modal__form">
+						<button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="form-floating modal-floating">
+							<input type="text" class="form-control modal__input" id="floatingInput9" placeholder="Фамилия и Имя">
+							<label for="floatingInput9">Фамилия и Имя</label>
+						</div>
+						<div class="form-floating modal-floating">
+							<input type="text" class="form-control modal__input" id="floatingInput10" placeholder="Фамилия и Имя">
+							<label for="floatingInput10">Город</label>
+						</div>
+						<div class="form-floating modal-floating">
+							<input type="tel" class="form-control modal__input" id="floatingInput11" placeholder="Фамилия и Имя">
+							<label for="floatingInput11">Телефон</label>
+						</div>
+						<button class="btn modal__submit-btn">Отправить заявку</button>
+					</div>
+					<div class="modal__results">
+						<img class="modal__result-img" src="img/ico-ok.png">
+						<p class="modal__result-text">Ваша заявка принята. Наш менеджер свяжется с Вами в ближайшее время.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="overlay" id="overlay-modal"></div>
         <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
         <script src="js/map.js"></script>
         <!-- <script src="js/promo.js"></script> -->
-        <!-- <script src="js/fixedMenu.js"></script> -->
+         <script src="js/fixedMenu.js"></script>
         <script src="js/animate.js"></script>
         <!-- <script src="js/cart.js"></script> -->
         <!-- <script src="js/video.js"></script> -->
