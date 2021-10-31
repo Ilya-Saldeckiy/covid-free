@@ -98,6 +98,7 @@
 
 	.modal-dialog {
 		width: 100%;
+		margin: 0;
 		margin-top: 65px;
 	}
 
@@ -119,6 +120,8 @@
 		line-height: 16px;
 		font-weight: 600;
 	}
+
+
 
 }
 

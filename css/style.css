@@ -2108,6 +2108,28 @@ li{
 		display: block;
 	}
 
+	.advantages_caption{
+		width: 90%;
+	}
+
+	.form__text {
+		display: block;
+		width: 170px;
+		margin: 0 auto;
+	}
+
+	.header__modal-btn{
+		font-size: 12px;
+		line-height: 16px;
+		position: relative;
+		top: 4px;
+	}
+
+	.covid__info_left-img{
+		width: 288px;
+		height: 80px;
+	}
+
 
 }
 
