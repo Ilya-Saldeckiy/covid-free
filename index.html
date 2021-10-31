@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns:emailto="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,10 +29,11 @@
                 <div class="header-container">
                     <h1 class="hidden-caption">CMD Центр Молекулярной Диагностики</h1>
                     <a class="logo" href="https://www.cmd-online.ru/" target="_blank"><img src="img/logo.svg" alt="Логотип"></a>
+									<a class="logo logo_mob" href="https://www.cmd-online.ru/" target="_blank"><img src="img/logo_mob.png" alt="Логотип"></a>
 									<button type="button" class="header__modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
 										Заказать звонок
 									</button>
-									<button class="btn fixed__btn">Оставить заявку</button>
+									<button class="btn fixed__btn" onclick="slowScroll('#form')">Оставить заявку</button>
                 </div>
             </div>
         </div>
@@ -40,14 +41,14 @@
             <div class="header-caption-position">
                 <h2 class="header-caption">ПЦР-тестирование на мероприятиях <span class="header-caption_decoration">в&nbsp;формате COVID-FREE</span></h2>
                 <p class="header-subtitle">Автоматическая выгрузка результатов в систему Организатора</p>
-                <a href="#" class="btn header_btn-form" target="_blank">Оставить заявку</a>
+                <a class="btn header_btn-form" onclick="slowScroll('#form')">Оставить заявку</a>
             </div>
         </header>
     </section>
         <main>
             <section class="section_covid">
 							<div class="container">
-								<h2 class="main-caption">Проведение мероприятий в формате COVID-FREE в&nbsp;Москве&nbsp;и&nbsp;регионах РФ</h2>
+								<h2 class="main-caption covid__caption">Проведение мероприятий в формате <span class="nowrap">COVID-FREE</span> в&nbsp;Москве&nbsp;и&nbsp;регионах РФ</h2>
 								<p class="covid_text">
 									В связи со сложной эпидемиологической обстановкой в стране проведение крупных мероприятий с численностью участников свыше 1 000 человек возможно только в формате COVID-FREE. Обязательным условием для Организаторов является проверка наличия одного из трех действующих QR-кодов у всех участников, обслуживающего персонала и посетителей:
 								</p>
@@ -76,7 +77,7 @@
 										<p class="covid__info_left-text">Для Организаторов крупных мероприятий в формате COVID-FREE мы предлагаем</p>
 										<p class="covid__info_left-text covid__info_left-text-decoration">ПЦР-тестирование с интеграцией результатов в личный кабинет Организатора.</p>
 										<p class="covid__info_left-text">После загрузки результатов возможна активация входных билетов участников и посетителей.</p>
-										<img class="covid__info_left-img" src="img/logo_rospotrebnadzor.svg" alt="Логотип Роспотребнадзопра">
+										<img class="covid__info_left-img desctop-img" src="img/logo_rospotrebnadzor.svg" alt="Логотип Роспотребнадзопра">
 									</div>
 									<div class="covid__info_right-block">
 										<h3 class="covid__info-caption">Процедура позволит Организаторам избежать:</h3>
@@ -92,6 +93,7 @@
 											<img class="covid__info_right-card-img" src="img/qr_3.svg" alt="qr-1">
 											<p class="covid__info_right-text">Конфликтных ситуаций с предоставлением недействительных QR-кодов</p>
 										</div>
+										<img class="covid__info_left-img tablet-img" src="img/logo_rospotrebnadzor.svg" alt="Логотип Роспотребнадзопра">
 										<p class="covid__info_right-block-text">Исследования проводятся в Центре молекулярной диагностики CMD Центрального НИИ Эпидемиологии Роспотребнадзора, который является&nbsp;официальным референс-центром по&nbsp;мониторингу за&nbsp;новой коронавирусной инфекцией.</p>
 									</div>
 								</div>
@@ -99,12 +101,12 @@
 						</section>
 						<section class="section_advantages">
 							<div class="container">
-								<h3 class="main-caption">Преимущества работы с нами</h3>
+								<h3 class="main-caption mobile-caption">Преимущества работы с нами</h3>
 								<div class="flex advantages_card-position">
 									<div class="flex alight-center advantages_card">
 										<img class="advantages__card_img" src="img/preimushestva1.svg" alt="Преимущество 1">
 										<p class="advantages__card_text">
-											<span class="advantages__card_text-decoration">Быстрая интеграция с программой Организатора</span> для автоматической выгрузки результатов тестирования — до&nbsp;2&nbsp;дней
+											<span class="advantages__card_text-decoration">Быстрая интеграция с&nbsp;программой Организатора</span> для автоматической выгрузки результатов тестирования — до&nbsp;2&nbsp;дней
 										</p>
 									</div>
 									<div class="flex alight-center advantages_card">
@@ -142,7 +144,7 @@
 						</section>
 						<section class="section_experience">
 							<div class="container">
-								<h3 class="main-caption">Успешный опыт организации проведения <span class="nowrap">ПЦР-тестирования</span>&nbsp;на&nbsp;COVID-19</h3>
+								<h3 class="main-caption">Успешный опыт организации проведения <span class="nowrap">ПЦР-тестирования</span> на&nbsp;COVID-19</h3>
 								<div class="experience__card-position">
 									<div class="flex alight-center experience__card">
 										<img class="experience__card-img experience__card-img_border-right" src="img/meropriyatiya1.jpg" alt="Мероприятие 1">
@@ -165,7 +167,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="flex alight-center experience__card">
+									<div class="flex alight-center tablet__direction experience__card">
 										<div>
 											<h3 class="experience__card-caption">Восточный экономический форум (ВЭФ), 2021</h3>
 											<p class="experience__card-text">Проводится в целях содействия развитию экономики Дальнего Востока и расширения международного сотрудничества в Азиатско-Тихоокеанском регионе.</p>
@@ -216,7 +218,7 @@
 						</section>
 						<section class="section_pay">
 							<div class="container">
-								<h2 class="main-caption pay_caption">Оплата</h2>
+								<h2 class="main-caption pay_caption mobile-caption">Оплата</h2>
 								<div class="flex pay_card-position">
 									<div class="pay__card">
 										<img class="pay__card-img" src="img/fiz.svg" alt="Картинка оплаты 1">
@@ -235,57 +237,79 @@
 								</div>
 							</div>
 						</section>
-						<section class="section_callback">
+						<section class="section_callback" id="form">
 							<div class="container">
-								<form class="flex callback__form-position">
-									<div class="callback__form_text-block">
-										<h3 class="form__caption">Оставьте заявку на организацию тестирования</h3>
-										<p class="form__text">
-											Для консультации позвоните по номеру
-										</p>
-										<a class="form__tel" href="tel:+79261152628">8 926 115 2628</a>
+								<form class="callback__form-position">
+<!--									form-result показываает окно результата-->
+									<div class="flex callback__form-state">
+										<div class="callback__form_text-block">
+											<h3 class="form__caption">Оставьте заявку на организацию тестирования</h3>
+											<p class="form__text">
+												Для консультации позвоните по номеру
+											</p>
+											<a class="form__tel" href="tel:+79261152628">8 926 115 2628</a>
+										</div>
+										<div class="flex callback__form-block">
+											<div class="form-floating">
+												<input type="text" class="form-control" id="floatingInput" placeholder="Фамилия и Имя">
+												<label for="floatingInput">Фамилия и Имя</label>
+											</div>
+											<div class="form-floating">
+												<input type="tel" class="form-control" id="floatingInput2" placeholder="Фамилия и Имя">
+												<label for="floatingInput2">Телефон</label>
+											</div>
+											<div class="form-floating">
+												<input type="text" class="form-control" id="floatingInput3" data-inputmask="'alias': 'email'" placeholder="Фамилия и Имя">
+												<label for="floatingInput3">Email</label>
+											</div>
+											<div class="form-floating">
+												<input type="text" class="form-control" id="floatingInput4" placeholder="Фамилия и Имя">
+												<label for="floatingInput4">Название компании Организатора</label>
+											</div>
+											<div class="form-floating">
+												<input type="text" class="form-control" id="floatingInput5" placeholder="Фамилия и Имя">
+												<label for="floatingInput5">Название мероприятия</label>
+											</div>
+											<div class="form-floating">
+												<input type="text" class="form-control " id="floatingInput6" placeholder="Фамилия и Имя">
+												<img class="data__input" src="img/ico_calendar.svg">
+												<label for="floatingInput6">Даты проведения</label>
+											</div>
+											<div class="form-floating">
+												<input type="text" class="form-control" id="floatingInput7" placeholder="Фамилия и Имя">
+												<label for="floatingInput7">Адрес мероприятия</label>
+											</div>
+											<div class="form-floating">
+												<input type="text" class="form-control" id="floatingInput8" placeholder="Фамилия и Имя">
+												<label for="floatingInput8">Планируемое кол-во участников</label>
+											</div>
+											<button class="btn form__btn" type="submit">Отправить заявку</button>
+										</div>
 									</div>
-									<div class="flex callback__form-block">
-										<div class="form-floating">
-											<input type="text" class="form-control" id="floatingInput" placeholder="Фамилия и Имя">
-											<label for="floatingInput">Фамилия и Имя</label>
-										</div>
-										<div class="form-floating">
-											<input type="tel" class="form-control" id="floatingInput2" placeholder="Фамилия и Имя">
-											<label for="floatingInput2">Телефон</label>
-										</div>
-										<div class="form-floating">
-											<input type="text" class="form-control" id="floatingInput3" data-inputmask="'alias': 'email'" placeholder="Фамилия и Имя">
-											<label for="floatingInput3">Email</label>
-										</div>
-										<div class="form-floating">
-											<input type="text" class="form-control" id="floatingInput4" placeholder="Фамилия и Имя">
-											<label for="floatingInput4">Название компании Организатора</label>
-										</div>
-										<div class="form-floating">
-											<input type="text" class="form-control" id="floatingInput5" placeholder="Фамилия и Имя">
-											<label for="floatingInput5">Название мероприятия</label>
-										</div>
-										<div class="form-floating">
-											<input type="text" class="form-control " id="floatingInput6" placeholder="Фамилия и Имя">
-											<img class="data__input" src="img/ico_calendar.svg">
-											<label for="floatingInput6">Даты проведения</label>
-										</div>
-										<div class="form-floating">
-											<input type="text" class="form-control" id="floatingInput7" placeholder="Фамилия и Имя">
-											<label for="floatingInput7">Адрес мероприятия</label>
-										</div>
-										<div class="form-floating">
-											<input type="text" class="form-control" id="floatingInput8" placeholder="Фамилия и Имя">
-											<label for="floatingInput8">Планируемое кол-во участников</label>
-										</div>
-										<button class="btn form__btn" type="submit">Отправить заявку</button>
+									<div class="flex callback__form-block-result">
+										<img class="callback__form-block-result-img" src="img/ico-ok.png">
+										<p class="callback__form-block-result-text">Ваша заявка принята.</p>
 									</div>
 								</form>
-								<div class="banner__position">
+<!--								<a href="https://www.cmd-online.ru/ur-covid/">-->
+<!--									<div class="banner__position">-->
+<!--										<p class="banner__subtittle">Для организаций</p>-->
+<!--										<h3 class="banner__caption">Обследование сотрудников на COVID-19</h3>-->
+<!--										<button class="btn banner__btn">Подробнее</button>-->
+<!--									</div>-->
+<!--								</a>-->
+								<div class="banner__position desktop-banner">
 									<p class="banner__subtittle">Для организаций</p>
 									<h3 class="banner__caption">Обследование сотрудников на COVID-19</h3>
-									<button class="btn banner__btn">Подробнее</button>
+									<button onclick="window.open('https://www.cmd-online.ru/ur-covid/');"  class="btn banner__btn">Подробнее</button>
+								</div>
+								<div class="banner__position mobile-banner">
+									<img class="banner-img" src="img/banner_small_tablet_mobile.png" alt="банер">
+									<div class="mobile-banner-p">
+										<p class="banner__subtittle">Для организаций</p>
+										<h3 class="banner__caption">Обследование сотрудников на COVID-19</h3>
+										<button onclick="window.open('https://www.cmd-online.ru/ur-covid/');"  class="btn banner__btn">Подробнее</button>
+									</div>
 								</div>
 							</div>
 						</section>
@@ -293,14 +317,28 @@
         <footer>
             <section class="footer">
                 <div class="container footer-position">
-                    <p class="footer-text">© <?=date("Y");?> 2021, ФБУН Центральный НИИ эпидемиологии Роспотребнадзора</p>
-                    <ul class="list-reset footer-social-list">
-                        <li class="footer-social-list-item"><a href="https://www.facebook.com/cmd.online.social " class="social-1" target="_blank"></a></li>
-                        <li class="footer-social-list-item"><a href="https://vk.com/cmd.online " class="social-2" target="_blank" rel="nofollow"></a></li>
-                        <li class="footer-social-list-item"><a href="https://ok.ru/cmdonline " class="social-3" target="_blank" rel="nofollow"></a></li>
-                        <li class="footer-social-list-item"><a href="https://ok.ru/cmdonline " class="social-4" target="_blank" rel="nofollow"></a></li>
-                        <li class="footer-social-list-item"><a href="https://www.youtube.com/channel/UCJLzXIczpWCx7Gelbmc3sAw " class="social-5" target="_blank" rel="nofollow"></a></li>
-                    </ul>
+									<div class="me-auto">
+										<h4 class="footer__caption">Центральный офис</h4>
+										<p class="footer__adress">111123, Россия, Москва, ул. Новогиреевская, д. 3А</p>
+										<p class="footer__adress footer__adress-last">метро "Перово" или "Шоссе Энтузиастов"</p>
+										<div class="d-flex alight-center">
+											<a class="footer__link-tel" href="tel:+74957880001">8 495 788 0001</a>
+											<span class="footer-line">|</span>
+											<a class="footer__link-email" href="mailto:info@cmd-online.ru">info@cmd-online.ru</a>
+										</div>
+									</div>
+									<div class="footer__social-position">
+										<ul class="list-reset footer-social-list">
+											<li class="footer-social-list-item"><a href="https://www.facebook.com/cmd.online.social " class="social-1" target="_blank"></a></li>
+											<li class="footer-social-list-item"><a href="https://vk.com/cmd.online " class="social-2" target="_blank" rel="nofollow"></a></li>
+											<li class="footer-social-list-item"><a href="https://ok.ru/cmdonline " class="social-3" target="_blank" rel="nofollow"></a></li>
+											<li class="footer-social-list-item"><a href="https://ok.ru/cmdonline " class="social-4" target="_blank" rel="nofollow"></a></li>
+											<li class="footer-social-list-item"><a href="https://www.youtube.com/channel/UCJLzXIczpWCx7Gelbmc3sAw " class="social-5" target="_blank" rel="nofollow"></a></li>
+											<li class="footer-social-list-item"><a href="#" class="social-6" target="_blank" rel="nofollow"></a></li>
+										</ul>
+										<a class="licenzi-link" href="https://www.cmd-online.ru/o-cmd/litsenzii-i-sertifikaty/" target="_blank" rel="nofollow">Лицензии и сертификаты</a>
+										<p class="footer-text">© <?=date("Y");?> 2021, ФБУН Центральный НИИ эпидемиологии Роспотребнадзора</p>
+									</div>
                 </div>
             </section>
             <section class="footer-recomend recomend-text">

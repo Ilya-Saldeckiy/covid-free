@@ -88,3 +88,38 @@
 	font-weight: 600;
 	color: #00b388;
 }
+
+
+@media (max-width: 767px){
+	.modal{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	.modal-dialog {
+		width: 100%;
+		margin-top: 65px;
+	}
+
+	.modal-content {
+		padding-left: 24px;
+		padding-top: 24px;
+		padding-bottom: 32px;
+		padding-right: 24px;
+	}
+
+	.modal-close-btn{
+		top: 19px;
+		right: 19px;
+	}
+
+	.modal__submit-btn{
+		width: 100%;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 600;
+	}
+
+}
+
+

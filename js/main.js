@@ -1,9 +1,16 @@
 
-
+function slowScroll(id) {
+	let top = $(id).offset().top;
+	$('html, body').animate({
+		scrollTop: top
+	}, {
+		duration: 350,
+		easing: "linear"
+	});
+}
 
 $(document).ready(function(){
 	$(":input").inputmask();
-
 
 	$("#floatingInput2").inputmask({
 		mask: '8-(999)-999-9999',
@@ -58,5 +65,7 @@ $(document).ready(function(){
 		}
 	});
 });
+
+
 
 
