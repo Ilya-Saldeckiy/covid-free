@@ -1107,6 +1107,7 @@ li{
 	margin-bottom: 25px;
 	margin-top: 25px;
 	display: table;
+	margin-left: auto;
 }
 
 .footer__social-position{
@@ -1312,6 +1313,10 @@ li{
 		font-weight: 400;
 		text-transform: uppercase;
 		color: #f8485e;
+	}
+
+	.licenzi-link{
+		margin-left: 0;
 	}
 
 }
