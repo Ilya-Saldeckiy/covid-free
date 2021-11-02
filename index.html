@@ -30,9 +30,9 @@
                     <h1 class="hidden-caption">CMD Центр Молекулярной Диагностики</h1>
                     <a class="logo" href="https://www.cmd-online.ru/" target="_blank"><img src="img/logo.svg" alt="Логотип"></a>
 									<a class="logo logo_mob" href="https://www.cmd-online.ru/" target="_blank"><img src="img/logo_mob.png" alt="Логотип"></a>
-									<button type="button" class="header__modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+									<a type="button" class="header__modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
 										Заказать звонок
-									</button>
+									</a>
 									<button class="btn fixed__btn" onclick="slowScroll('#form')">Оставить заявку</button>
                 </div>
             </div>
@@ -259,7 +259,7 @@
 												<label for="floatingInput2">Телефон</label>
 											</div>
 											<div class="form-floating">
-												<input type="text" class="form-control" id="floatingInput3" data-inputmask="'alias': 'email'" placeholder="Фамилия и Имя">
+												<input type="text" class="form-control" id="floatingInput3" placeholder="Фамилия и Имя">
 												<label for="floatingInput3">Email</label>
 											</div>
 											<div class="form-floating">
@@ -291,26 +291,21 @@
 										<p class="callback__form-block-result-text">Ваша заявка принята.</p>
 									</div>
 								</form>
-<!--								<a href="https://www.cmd-online.ru/ur-covid/">-->
-<!--									<div class="banner__position">-->
-<!--										<p class="banner__subtittle">Для организаций</p>-->
-<!--										<h3 class="banner__caption">Обследование сотрудников на COVID-19</h3>-->
-<!--										<button class="btn banner__btn">Подробнее</button>-->
-<!--									</div>-->
-<!--								</a>-->
-								<div class="banner__position desktop-banner">
-									<p class="banner__subtittle">Для организаций</p>
-									<h3 class="banner__caption">Обследование сотрудников на COVID-19</h3>
-									<button onclick="window.open('https://www.cmd-online.ru/ur-covid/');"  class="btn banner__btn">Подробнее</button>
-								</div>
-								<div class="banner__position mobile-banner">
-									<img class="banner-img" src="img/banner_small_tablet_mobile.png" alt="банер">
-									<div class="mobile-banner-p">
+								<a href="https://www.cmd-online.ru/ur-covid/" target="_blank">
+									<div class="banner__position desktop-banner">
 										<p class="banner__subtittle">Для организаций</p>
 										<h3 class="banner__caption">Обследование сотрудников на COVID-19</h3>
 										<button onclick="window.open('https://www.cmd-online.ru/ur-covid/');"  class="btn banner__btn">Подробнее</button>
 									</div>
-								</div>
+									<div class="banner__position mobile-banner">
+										<img class="banner-img" src="img/banner_small_tablet_mobile.png" alt="банер">
+										<div class="mobile-banner-p">
+											<p class="banner__subtittle">Для организаций</p>
+											<h3 class="banner__caption">Обследование сотрудников на COVID-19</h3>
+											<button onclick="window.open('https://www.cmd-online.ru/ur-covid/');"  class="btn banner__btn">Подробнее</button>
+										</div>
+									</div>
+								</a>
 							</div>
 						</section>
         </main>

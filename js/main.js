@@ -12,10 +12,28 @@ function slowScroll(id) {
 $(document).ready(function(){
 	$(":input").inputmask();
 
+	//email mask
+	$("#floatingInput3").inputmask({
+		mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
+		showMaskOnHover: false,
+		showMaskOnFocus: true,
+		greedy: false,
+		onBeforePaste: function (pastedValue, opts) {
+			pastedValue = pastedValue.toLowerCase();
+			return pastedValue.replace("mailto:", "");
+		},
+		definitions: {
+			'*': {
+				validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~\-]",
+				casing: "lower"
+			}
+		}
+	});
+
 	$("#floatingInput2").inputmask({
 		mask: '8-(999)-999-9999',
 		placeholder: '8-(___)-___-____',
-		showMaskOnHover: true,
+		showMaskOnHover: false,
 		showMaskOnFocus: true,
 		onBeforePaste: function (pastedValue, opts) {
 			var processedValue = pastedValue;
@@ -28,7 +46,7 @@ $(document).ready(function(){
 	$("#floatingInput11").inputmask({
 		mask: '8-(999)-999-9999',
 		placeholder: '8-(___)-___-____',
-		showMaskOnHover: true,
+		showMaskOnHover: false,
 		showMaskOnFocus: true,
 		onBeforePaste: function (pastedValue, opts) {
 			var processedValue = pastedValue;
@@ -41,7 +59,7 @@ $(document).ready(function(){
 	$("#floatingInput6").inputmask({
 		mask: '99.99.9999 - 99.99.9999',
 		placeholder: '__.__.____ - __.__.____',
-		showMaskOnHover: true,
+		showMaskOnHover: false,
 		showMaskOnFocus: true,
 		onBeforePaste: function (pastedValue, opts) {
 			var processedValue = pastedValue;
@@ -54,7 +72,7 @@ $(document).ready(function(){
 	$("#floatingInput8").inputmask({
 		mask: '99999',
 		placeholder: '',
-		showMaskOnHover: true,
+		showMaskOnHover: false,
 		showMaskOnFocus: true,
 		onBeforePaste: function (pastedValue, opts) {
 			var processedValue = pastedValue;
