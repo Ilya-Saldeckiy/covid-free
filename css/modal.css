@@ -92,12 +92,13 @@
 
 @media (max-width: 767px){
 	.modal{
-		padding-left: 8px;
+		padding-left: 8px !important;
 		padding-right: 8px;
 	}
 
 	.modal-dialog {
 		width: 100%;
+		max-width: 100%;
 		margin: 0;
 		margin-top: 65px;
 	}
