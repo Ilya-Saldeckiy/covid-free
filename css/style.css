@@ -10,6 +10,12 @@ html{
 	box-sizing: inherit;
 }
 
+.btn-check:focus+.btn, .btn:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+
 body{
 	margin: 0;
 	padding: 0;
@@ -382,7 +388,7 @@ li{
 	line-height: 64px;
 	font-weight: 700;
 	color: #ffffff;
-	width: 690px;
+	width: 720px;
 	padding-top: 112px;
 	margin-bottom: 58px;
 }
@@ -418,7 +424,7 @@ li{
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 400;
-	text-decoration: underline;
+	text-decoration: none;
 	color: #ffffff;
 	background-color: unset;
 	outline: none;
@@ -1136,6 +1142,11 @@ li{
 	justify-content: end;
 }
 
+.form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+	padding-top: 1rem;
+	padding-bottom: .625rem;
+}
+
 
 
 /* Адаптив */
@@ -1637,7 +1648,7 @@ li{
 		font-size: 28px;
 		line-height: 32px;
 		font-weight: 700;
-		width: 285px;
+		width: 340px;
 		margin-bottom: 43px;
 	}
 
@@ -2056,8 +2067,8 @@ li{
         padding-bottom: 5px;
     }
 
-	.footer__adress{
-		width: 175px;
+	.footer__adress {
+		width: 179px;
 	}
 
 	.footer__adress-last {
@@ -2162,6 +2173,20 @@ li{
 		height: 80px;
 	}
 
+	.mb{
+		margin-right: 0!important;
+	}
 
+
+	.footer__adress-last{
+		width: 265px;
+	}
+
+}
+
+@media (max-width: 350px){
+	.header-caption{
+		width: 290px;
+	}
 }
 

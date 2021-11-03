@@ -69,19 +69,19 @@ $(document).ready(function(){
 			return processedValue;
 		}
 	});
-	$("#floatingInput8").inputmask({
-		mask: '99999',
-		placeholder: '',
-		showMaskOnHover: false,
-		showMaskOnFocus: true,
-		onBeforePaste: function (pastedValue, opts) {
-			var processedValue = pastedValue;
-
-//do something with it
-
-			return processedValue;
-		}
-	});
+// 	$("#floatingInput8").inputmask({
+// 		mask: '*{1,20}',
+// 		placeholder: '',
+// 		showMaskOnHover: false,
+// 		showMaskOnFocus: true,
+// 		onBeforePaste: function (pastedValue, opts) {
+// 			var processedValue = pastedValue;
+//
+// //do something with it
+//
+// 			return processedValue;
+// 		}
+// 	});
 });
 
 
