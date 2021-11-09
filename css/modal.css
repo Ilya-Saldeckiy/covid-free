@@ -17,7 +17,7 @@
 .modal-close-btn{
 	width: 18px;
 	height: 18px;
-	outline: none !important;
+	outline: none;
 	border: none !important;
 	background: url("../img/ico_x.svg") no-repeat !important;
 	background-size: 18px 18px !important;
