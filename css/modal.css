@@ -21,7 +21,7 @@
 	border: none !important;
 	background: url("../img/ico_x.svg") no-repeat !important;
 	background-size: 18px 18px !important;
-	position: absolute !important;
+	position: absolute;
 	top: 27px;
 	right: 27px;
 }
