@@ -123,6 +123,15 @@
 		font-weight: 600;
 	}
 
+	.modal-title{
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.modal-close-btn{
+		-webkit-background-size: 18px !important;
+	}
+
 
 
 }
