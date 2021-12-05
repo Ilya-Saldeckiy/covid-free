@@ -18,9 +18,9 @@
 	width: 18px;
 	height: 18px;
 	outline: none;
-	border: none;
-	background: url("../img/ico_x.svg") no-repeat;
-	background-size: cover;
+	border: none !important;
+	background: url("../img/ico_x.svg") no-repeat !important;
+	background-size: cover !important;
 	position: absolute;
 	top: 27px;
 	right: 27px;
@@ -112,6 +112,8 @@
 	.modal-close-btn{
 		top: 19px;
 		right: 19px;
+		padding: 0;
+		background-size: 21px !important;
 	}
 
 	.modal__submit-btn{
@@ -119,6 +121,15 @@
 		font-size: 14px;
 		line-height: 16px;
 		font-weight: 600;
+	}
+
+	.modal-title{
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.modal-close-btn{
+		-webkit-background-size: 18px !important;
 	}
 
 

@@ -2189,6 +2189,10 @@ li{
 		width: 265px;
 	}
 
+	.header__modal-btn:hover{
+		font-size: 12px;
+	}
+
 }
 
 @media (max-width: 350px){
